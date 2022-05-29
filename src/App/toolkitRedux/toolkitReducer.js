@@ -2,7 +2,11 @@ import { createAction, createReducer } from '@reduxjs/toolkit';
 // Дефолтное состояние для счетчика
 const defaultState = {
   count: 1,
-  todos: ['снять видео', 'смонтировать видео', 'рассказать про toolkit']
+  todos: [
+    'Открыть VSCode',
+    'Сделать это приложение',
+    'Дать задание пользователю'
+  ]
 };
 // Создаем action
 export const increment = createAction('INCREMENT');
@@ -16,5 +20,3 @@ export default createReducer(defaultState, {
     state.count = state.count - 1;
   }
 });
-
-console.log(defaultState);

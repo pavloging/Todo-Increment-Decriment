@@ -4,7 +4,11 @@ const toolkitSlice = createSlice({
   name: 'toolkit',
   initialState: {
     count: 1,
-    todos: ['снять видео', 'смонтировать видео', 'рассказать про toolkit']
+    todos: [
+      'Открыть VSCode',
+      'Сделать это приложение',
+      'Дать задание пользователю'
+    ]
   },
   reducers: {
     increment(state) {

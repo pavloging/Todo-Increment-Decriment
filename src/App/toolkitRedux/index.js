@@ -6,8 +6,8 @@ import toolkitSlise from './toolkitSlise';
 const rootReducer = combineReducers({
   toolkit: toolkitSlise
 });
-// Создаем store. В toolkitSlise/toolkitReducer мы настраиваем нужное значение,
-// И заносим в store.
+// Создаем store. В toolkitSlise/toolkitReducer мы настраиваем,
+// И заносим в store, далее store идет в index.
 export const store = configureStore({
   reducer: rootReducer
 });
